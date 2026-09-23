@@ -1,0 +1,30 @@
+[
+  {
+    "tool": "inspect_experiment",
+    "args": {}
+  },
+  {
+    "tool": "normalize_counts",
+    "args": {
+      "method": "log1p_cpm"
+    }
+  },
+  {
+    "tool": "differential_expression",
+    "args": {
+      "test": "welch_t",
+      "correction": "none"
+    }
+  },
+  {
+    "tool": "submit",
+    "args": {
+      "genes": [
+        "G04",
+        "G11",
+        "G19",
+        "G27"
+      ]
+    }
+  }
+]
