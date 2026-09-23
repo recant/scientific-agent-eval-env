@@ -1,0 +1,24 @@
+[
+  {
+    "tool": "inspect_experiment",
+    "args": {}
+  },
+  {
+    "tool": "differential_expression",
+    "args": {
+      "test": "welch_t",
+      "correction": "BH"
+    }
+  },
+  {
+    "tool": "submit",
+    "args": {
+      "genes": [
+        "G04",
+        "G11",
+        "G19",
+        "G27"
+      ]
+    }
+  }
+]
